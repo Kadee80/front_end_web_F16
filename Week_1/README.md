@@ -58,7 +58,14 @@
   ```
   and then `ls` on Mac or `dir` on Windows the command line will print out the current files and folders on my desktop.
 
-  Now, lets make a new folder in our desktop to clone our class files to. We use `mkdir` on both Mac and Windows to make a new directory.
+  If we need to jump back out of a folder using the command line, we can type
+  ```
+  cd ../
+  ```
+  Now if we list the contents of our current directory, we will see we have moved back into the parent folder. Lets take a moment to practice moving around our computers file system using `cd` and reading out contents using `ls` or `dir`.
+
+ 
+  Time to make a new folder in our desktop to clone our class files to. We use `mkdir` on both Mac and Windows to make a new directory.
 
   ```
   mkdir WebDevClassFiles
@@ -86,11 +93,33 @@
   ```
   git pull
   ```
-  to sync your folder with the class repo. If you accidentally edit these files and are no longer able to pull, you can always delete your local copy and clone again.
+  To sync your folder with the class repo. If you accidentally edit these files and are no longer able to pull, you can always delete your local copy and clone again. *If you're feeling like a Git master already, you can try [forking the repository](https://help.github.com/articles/syncing-a-fork/) instead.*
 
-  *If you're feeling like a Git master already, you can try [forking the repository](https://help.github.com/articles/syncing-a-fork/) instead.*
+### Making Your Own Class/HW File Repository.
+
+While in signed in to Github. Go to your account page and click the `Repositories` tab. 
+  * Click New
+  * Name it something unqiue but descriptive
+  * Feel free to edit the READEME.md with a longer description
+	* Click the Clone/Download Button in the upper right (just like we did for the class files)
+  * In terminal, navigate to the folder we made earlier for you class files. :
+  ```
+  cd WebDevClassFiles
+  ```
+  **IMPORTANT**- note that we are in the Class Files folder, not the folder we cloned with the in class examples! So if we type `ls` or `dir` we should see the front_end_web_F16 class folder. 
+
+  We are going to clone you HW directory into the `WebDevClassFiles` folder, NOT the class example folder. You will take notes, make edits and push your HW assignments to YOUR HW REPO *not* the class example master repo.
+
+  You have created a repo on GitHub for your HW. Navigate to it, grab to the clone url from the `Clone or Download` button. Make sure you are in your WebDevClassFiles folder, then type:
+  ```
+  git clone [your clone url copy paste here]
+  ```
 
 
+
+
+
+  
 
 
 
