@@ -84,7 +84,7 @@ In the second example, we have:
 
 We now need to jump in and out of child directories from the parent directory. Let’s take a look at how we would write our anchor tags to link within our navigation.
 
-![Linking web pages that are in both parent and child directories](img/directories.004.png"Linking web pages that are in both parent and child directories")
+![Linking web pages that are in both parent and child directories](img/directories.004.png "Linking web pages that are in both parent and child directories")
 Linking web pages that are in both parent and child directories
 
 We now have to write our links on our homepage differently than the subpages since the homepage lives in the parent directory, and the contact and about pages live in child or subdirectories. Luckily, we are linking to the index files within our subdirectories, so specifying the file name is optional.
