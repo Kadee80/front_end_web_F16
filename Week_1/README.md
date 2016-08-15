@@ -114,8 +114,24 @@ While in signed in to Github. Go to your account page and click the `Repositorie
   ```
   git clone [your clone url copy paste here]
   ```
+### Adding and Editing Files, Pushing and Commiting Changes.
 
+Every week, you will be commiting files and folders to your HW repo, and pushing them to your online GitHub repo for me to review. This is how you will submit your HW code. 
 
+  * Lets open your repo in sublime text and create a new subfolder called `Hello World`
+  * Next, create a file named README.md in the Hello_World folder
+  * Open the file, type anything you like (Keep in mind this will be published on GitHub in a few minutes. So keep it professional.) And save the file.
+
+  * Back in terminal, navigate to your HW repo folder.
+
+  * Use `ls` or `dir` to make sure you are in the correct folder. 
+
+  In terminal
+  ```
+  git status
+  ```
+  You should now see a list of files and folders that git is not keeping track of yet. In our case is would be Hello World and 
+	
 
 
 
@@ -134,6 +150,8 @@ While in signed in to Github. Go to your account page and click the `Repositorie
 ### HOMEWORK:
 
 [Read Through This Git Tutorial](http://rogerdudler.github.io/git-guide/)
+
+* [Email Me Your GitHub HW Repo Link](mailto:kaa328@nyu.edu)
 
 * Make sure you have all software set up for next class. We won’t be using photoshop for a few weeks but please inquire about the student discounts.
 
