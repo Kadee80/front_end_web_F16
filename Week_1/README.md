@@ -130,22 +130,27 @@ Every week, you will be commiting files and folders to your HW repo, and pushing
   ```
   git status
   ```
-  You should now see a list of files and folders that git is not keeping track of yet. In our case is would be Hello World and 
-	
-
-
-
+  You should now see a list of files and folders that git is not keeping track of yet. In our case is would be Hello_World/ and the README.md within. To add the current state of this file and folder we use `git add` + `file or folder name`.
+  ```
+  git add Hello_World
+  git add Hello_World/README.md
+  ```
+  or if we want to add any and everything new or updated to git :
+  ```
+  git add *
+  ```
+ 
+  Now we commit with a message:
+  ```
+  git commit -m "Initial Commit, In class exercise"
+  ```
   
+  Finally, we need to `push` our local repos changes to our GitHub repository.
+  ```
+  git push origin master
+  ```
 
-
-
-  
-
-
-
-
-
-
+  Take a look at your online repo. It should match your local computers if you used ` git add` `git commit` and `git push` correctly.
 
 ### HOMEWORK:
 
@@ -155,7 +160,9 @@ Every week, you will be commiting files and folders to your HW repo, and pushing
 
 * Make sure you have all software set up for next class. We won’t be using photoshop for a few weeks but please inquire about the student discounts.
 
-* Get your blog/server space set up.
+* Make a new folder in your HW repo called Week_1. In that folder, save .txt or .md file with  your favorite cooking recipe. We will be using that to format some HTML next week. Use `git add` `git commit` and `git push` to upload these folders and files to Github, just like we did in class today.
+
+* Get your blog/server space set up. I understand it make take a while to get an appointment. In the meantime, you will submit your assignments by adding them to your GitHub Repo.
 
 * You can receive web server space from IDM’s Technology Manager, Elton Kwok, MAGNET 883 or if you already have your own that works too. Please [email him](mailto:eltonkwok@nyu.edu) for an appointment (plan on it taking 30 minutes).
 
