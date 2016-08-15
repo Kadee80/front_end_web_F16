@@ -20,16 +20,18 @@
 * Wireframing Software – [Balsamiq](https://balsamiq.com/)
 * Design and Graphics – [Adobe Creative Cloud (Photoshop)](http://www.adobe.com/creativecloud/buy/students.html?promoid=65FN7X8B&mv=other) **NYU Poly has a discount plan for Students.**
 
-###HOMEWORK:
+### HOMEWORK:
 
-Make sure you have all software set up for next class. We won’t be using photoshop for a few weeks but please inquire about the student discounts.
+[Read Through This Git Tutorial](http://rogerdudler.github.io/git-guide/)
 
-Get your blog/server space set up.
+* Make sure you have all software set up for next class. We won’t be using photoshop for a few weeks but please inquire about the student discounts.
 
-You can receive web server space from IDM’s Technology Manager, Elton Kwok, MAGNET 883 or if you already have your own that works too. Please [email him](mailto:eltonkwok@nyu.edu) for an appointment (plan on it taking 30 minutes).
-IDM’s FTP server info: http://sites.bxmc.poly.edu (Use active mode)
+* Get your blog/server space set up.
+
+* You can receive web server space from IDM’s Technology Manager, Elton Kwok, MAGNET 883 or if you already have your own that works too. Please [email him](mailto:eltonkwok@nyu.edu) for an appointment (plan on it taking 30 minutes).
+
+* IDM’s FTP server info: http://sites.bxmc.poly.edu (Use active mode)
 If you have your own server space set up already that is also ok.
-IMPORTANT! – Leave your name prefered email and link to your blog once it is set up in the comment section of this post. This is how I will be checking your assignments/progress in the future.
 
 **Documentation is 5% of your grade at IDM.**
 
