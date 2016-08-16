@@ -1,4 +1,4 @@
-#Routes, Directories, Links and URLS
+# Routes, Directories, Links and URLS
 
 Before move on let’s take a moment to look at linking between files and folders within our site.
 
@@ -90,20 +90,20 @@ Linking web pages that are in both parent and child directories
 We now have to write our links on our homepage differently than the subpages since the homepage lives in the parent directory, and the contact and about pages live in child or subdirectories. Luckily, we are linking to the index files within our subdirectories, so specifying the file name is optional.
 
 HOMEPAGE NAV LINKS:
-```
+```html
 <a href="./">HOME</a>
 <a href="about/">ABOUT</a>
 <a href="contact/">CONTACT</a>
 ```
 
 ABOUT NAV LINKS:
-```
+```html
 <a href="../">HOME</a>
 <a href="./">ABOUT</a>
 <a href="../contact/">CONTACT</a>
 ```
 CONTACT NAV LINKS:
-```
+```html
 <a href="../">HOME</a>
 <a href="../about/">ABOUT</a>
 <a href="./">CONTACT</a>
@@ -123,21 +123,21 @@ From homepage to about page:
 When linking to a file within a subdirectory of the current file, we need to first “jump into” or open the subdirectory by specifying the subdirectory name followed by a /:
 
 From homepage to about page:
-```
+```html
 <a href="about/">ABOUT</a>
 ```
 ---
 When we are linking from a file within a subdirectory of the file we are linking to  we need to “jump out of” our current directory and in to the parent directory with ../
 
 From about page to home:
-```
+```html
 <a href="../">HOME</a>
 ```
 ---
 When we are linking to a file within a different subdirectory than the file we are linking from we need to combine the above two examples by first entering the current subdirectory’s parent using ../ and then “jumping into” the other subdirectory be specifying the subdirectory’s name followed by a /
 
 From about page to contact:
-```
+```html
 <a href="../contact">CONTACT</a>
 ```
 ---

@@ -137,13 +137,14 @@ Hello World - Admin and Setup
 
 #### Week 3 
 
+* HTML Form Elements
 * Introduction to CSS
 * CSS Specificity
 * The Box Model and Layouts
-* Media Queries Part 1
 
 #### Week 4
 
+* Media Queries Part 1
 * Advanced CSS Concepts
 * CSS3
 * Bonus - Stuff you don't need JS for (dropdowns, tooltips, and modals)
