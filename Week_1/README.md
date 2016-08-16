@@ -10,12 +10,16 @@
 * Browser Add Ons – Google Developer Tools and FireBug
 * Sublime Text Editor (or Coda, Textmate, TextWrangler…class tutorials will be using Sublime)
 * Sublime Setup:
-* Install Package Control
-  * In the command pallette (Cmd-Shift+P on Mac) type ‘Install’ then press enter to see a list of packages. Search for ‘HTML-CSS-JS-Prettify’ then press enter to install.
+  * [Install Package Control](https://packagecontrol.io/installation)
+  * In the command pallette `Cmd+Shift+P` on Mac `Ctrl+Shift+P` on PC type ‘Install’ then press enter to see a list of packages. 
+  * Search for ‘HTML-CSS-JS-Prettify’ then press enter to install.
   ``` 
   Ctrl+Shift+H (or Cmd+Shift+H if you're on a Mac) 
   ```
   will automatically indent your code properly. (Dont worry, we will have HTML to Prettify soon enough!) For more info on this package [visit their documentation] (https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify).
+  * Open the command pallette again (See step above)
+  * Search for 'Emmet' and hit enter to install. This will give you some handy code hinting and autocomplete!
+
 
 * Wireframing Software – [Balsamiq](https://balsamiq.com/)
 * Design and Graphics – [Adobe Creative Cloud (Photoshop)](http://www.adobe.com/creativecloud/buy/students.html?promoid=65FN7X8B&mv=other) **NYU Poly has a discount plan for Students.**

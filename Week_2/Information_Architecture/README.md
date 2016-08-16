@@ -74,6 +74,3 @@ Also, it is worth noting that these diagrams can be made with any software you a
 * Baked Goods
 * Chocolate
 * Fruit
-
-##HW
-Take a look at a fairly complicated recipe website. Using a tool of your choice, analyze/diagram what their site map and information architecture looks like. Obviously, I don’t expect you to go down to the individual recipe level, but be sure to show how the site you choose breaks down their recipes into categories and at least 1 sub-category.
