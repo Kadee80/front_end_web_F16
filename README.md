@@ -10,7 +10,7 @@
 
 **Spring 2016 – Professor Kathryn Adee**
 
-*Monday, Wednesday 4:30PM – 6:20PM;  2 MetroTech Center Rm: 817*
+*Monday, Wednesday 6:30PM – 8:20PM;  2 MetroTech Center Rm: 816*
 
 *To contact professor: kaa328@nyu.edu*
 
@@ -115,7 +115,7 @@ Performance and attendance of the student has been such that course requirements
 
 ## Accommodations
 
-If you are student with a disability who is requesting accommodations, please contact New York University’s Moses Center for Students with Disabilities at 212-998-4980 or mosescsd@nyu.edu. You must be registered with CSD to receive accommodations. Information about the Moses Center can be found at www.nyu.edu/csd. The Moses Center is located at 726 Broadway on the 2nd floor.
+If you are student with a disability who is requesting accommodations, please contact New York University’s Moses Center for Students with Disabilities at 212-998-980 or mosescsd@nyu.edu.  You must be registered with CSD to receive accommodations.  Information about the Moses Center can be found atwww.nyu.edu/csd. The Moses Center is located at 726 Broadway on the 2nd floor.
 
 ## Course Schedule
 
