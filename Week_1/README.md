@@ -8,7 +8,7 @@
 
 * Browser – Chrome or Firefox
 * Browser Add Ons – Google Developer Tools and FireBug
-* Sublime Text Editor (or Coda, Textmate, TextWrangler…class tutorials will be using Sublime)
+* [Sublime Text Editor](https://www.sublimetext.com/3) (or Coda, Textmate, TextWrangler…class tutorials will be using Sublime)
 * Sublime Setup:
   * [Install Package Control](https://packagecontrol.io/installation)
   * In the command pallette `Cmd+Shift+P` on Mac `Ctrl+Shift+P` on PC type ‘Install’ then press enter to see a list of packages. 
