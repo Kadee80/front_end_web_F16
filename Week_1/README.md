@@ -160,7 +160,7 @@ Every week, you will be commiting files and folders to your HW repo, and pushing
 
 [Read Through This Git Tutorial](http://rogerdudler.github.io/git-guide/)
 
-* [Email Me Your GitHub HW Repo Link](mailto:kaa328@nyu.edu)
+* Email Me Your GitHub HW Repo Link  kaa328@nyu.edu
 
 * Make sure you have all software set up for next class. We won’t be using photoshop for a few weeks but please inquire about the student discounts.
 
