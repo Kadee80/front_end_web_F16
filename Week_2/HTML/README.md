@@ -46,7 +46,7 @@ You can think of tags as being like parentheses: whenever you open one, you shou
 ```
 
 ```html
-<!—DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html> 
  <head> 
  <title>My Webpage</title> 
