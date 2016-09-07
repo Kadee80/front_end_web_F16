@@ -125,13 +125,19 @@ HTML:
 ##### Grouping
 When several selectors share the same declarations, they may be grouped into a comma-separated list
 
-`h1, h2, h3 {font-family: Georgia;}`
+```
+h1, h2, h3 {
+  font-family: Georgia;
+}
+```
 ^ will apply the Georgia font family to all h1, h2 and h3 elements in our document
 
 ##### Universal Selector
 The universal selector, written “*”, matches the name of any element type.
 
-` * {border: 2px;}`
+```
+ * {border: 2px;}
+```
 ^ Every single element on the page will have a 2px border (insane). In general, the universal selector is used to remove default margins and paddings for all elements.
 
 ##### Descendant Selector
@@ -140,7 +146,9 @@ Sometimes, you want selectors to match an element that is the descendant of anot
 
 A descendant selector is made up of two or more selectors separated by whitespace.
 
-`h1 em {color: blue;}`
+```
+h1 em {color: blue;}
+```
 ^ only empahsis (italic) tags within an H1 element will be colored blue
 
 ##### When should I used these?
@@ -244,7 +252,7 @@ p{
 *We will expand on the Box Model more in our section on layout.*
 
 ## Positioning Properties
-
+```
 height : length | percentage | inherit
 width : length | percentage | inherit
 left : length | percentage | auto | inherit
@@ -252,5 +260,5 @@ top : length | percentage | auto | inherit
 right : length | percentage | auto | inherit
 bottom : length | percentage | auto | inherit
 position : static | relative | absolute | fixed | inherit
-
+```
 *left/top/right/bottom usually used when position is specified as absolute or relative*
