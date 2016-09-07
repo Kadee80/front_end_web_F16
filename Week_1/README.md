@@ -2,7 +2,7 @@
 
 ## Introductions, Attendance
 
-## A Brief History of the Web
+## [A Brief History of the Web](https://www.youtube.com/watch?v=h8K49dD52WA)
 
 ## Required Software
 
