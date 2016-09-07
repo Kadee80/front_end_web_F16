@@ -118,6 +118,24 @@ While in signed in to Github. Go to your account page and click the `Repositorie
   ```
   git clone [your clone url copy paste here]
   ```
+#### What if we want to add an exisiting project from our local computer to a GitHub Repository?
+
+* follow the instructions above to create a new online repository on GitHub.
+
+* in terminal/command line execute the following commands:
+
+```
+cd [your local folder here]
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/USERNAME/REPONAME.git
+git remote -v
+git push -u origin master
+```
+*a tutorial on how to do this is generated when you create an online repo on Github*
+
+You can also [follow the tutorial here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 ### Adding and Editing Files, Pushing and Commiting Changes.
 
 Every week, you will be commiting files and folders to your HW repo, and pushing them to your online GitHub repo for me to review. This is how you will submit your HW code. 
