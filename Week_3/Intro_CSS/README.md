@@ -240,6 +240,7 @@ margin : length
 border : style  width  color
 padding : length
 width & height : length
+
 p{
  margin: 50px;
  padding: 30px;

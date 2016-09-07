@@ -57,8 +57,6 @@ What if our container div is 1000px wide and we want to fit 4 images per row wit
 
 [W3 inline vs block elements](http://www.w3schools.com/html/html_blocks.asp)
 
-#### Live Code: Lets make a grid!
-
 ```
 .myInlineElement{
   display:inline;
