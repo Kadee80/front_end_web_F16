@@ -33,4 +33,48 @@ OK. We are down to 260px to work with. But what about the border? Remember, unli
 (remember we have 10px on the left AND right so we need to subtract 20px, not 10px)
 ```
 ### In Class Exercise:
-What if our container div is 1000px wide and we want to fit 4 images per row?
+What if our container div is 1000px wide and we want to fit 4 images per row with a margin of 10px on each side and a border of 10px?
+
+```
+.container{
+  width: 1000px;
+  /*set the top/bottom margins to 0, and the left/right to auto to center the container in the page*/
+  margin:0 auto;
+}
+
+.polaroid{
+  margin:10px;
+  border:10px;
+  width: ??px;
+}
+```
+
+## Float, Clear and Inline Block
+
+* Block elements want to take up the entire width of the page/containing element.
+
+* Inline elements will keep stacking on the right as long as there is enough space.
+
+[W3 inline vs block elements](http://www.w3schools.com/html/html_blocks.asp)
+
+#### Live Code: Lets make a grid!
+
+```
+.myInlineElement{
+  display:inline;
+}
+```
+```
+.myBlockElement{
+  display:block;
+}
+```
+```
+.myInlineBlockElement{
+  display:inline-block;
+}
+```
+
+Wait! What is inline-block? It is kind of the best of both worlds. We still need to define dimensions of our element in the CSS but we can stack elements without that pesky clearing nonsense!
+
+[W3 inline block explained](http://www.w3schools.com/css/css_inline-block.asp)
