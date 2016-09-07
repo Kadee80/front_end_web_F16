@@ -125,6 +125,7 @@ What about images? We add them like this:
 ```html
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Female_pair.jpg/800px-Female_pair.jpg"/>
 ```
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Female_pair.jpg/800px-Female_pair.jpg"/>
 
 Whoa, there’s another one of those attributes! You’ll notice the src attribute tells us the location of the image file. In this case, it just links to a picture of a chicken on wikipedia, but as we progress we will creating our own images that live in our site folders.
 
