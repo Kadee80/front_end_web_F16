@@ -51,16 +51,6 @@ OK, now we have our form element filled out with the appropriate attributes. (no
 </form>
 ```
 
-<form action="login.php" method="POST" name="sampleForm">
-	<label for="FirstName">First Name: </label>
-	<input name="FirstName" type="text">
-	<label for="LastName">Last Name: </label>
-	<input name="LastName" type="text" placeholder="Last Name" maxlength="15">
-	<label for="Password">Password</label>
-	<input name="Password" type="password"/>
-	<input name="Submit" type="submit" value="submit"/>
-</form>
-
 First, let's talk about `<label>`. You guessed it, its a label for a form input! Notice how unlike a `<p>` element, it does not `clear` the entire width of its container element. That is because, `<label>` and `<input>` are *inline* elements. More on **inline** vs **block** properties next week when we start tackling some basic CSS. 
 
 Just rememeber: 
@@ -71,8 +61,6 @@ Just rememeber:
 	<label for="FirstName">First Name: </label>
 	<input name="FirstName" type="text">
 ```
-<label for="FirstName">First Name: </label>
-<input name="FirstName" type="text">
 
 Notice `<label>` has an attribute `for="FirstName"`. This corresponds with the `name="FirstName"` attribute in the `<input/>` element the label is for. 
 
@@ -100,30 +88,12 @@ Aside from `name` we also have an input `type` in this case it is a text input. 
 <input type="button" value="Click this Button"/>
 <input type="reset"/>
 ```
-<input type="text"/>
-<input type="number"/>
-<input type="password"/>
-<input type="hidden"/>
-<input type="email"/>
-<input type="color">
-<input type="date"/>
-<input type="month"/>
-<input type="week"/>
-<input type="time"/>
-<input type="radio"/>
-<input type="checkbox"/>
-<input type="range" min="0" max="10"/>
-<input type="submit" value="SUBMIT!"/>
-<input type="button" value="Click this Button"/>
-<input type="reset"/>
 
 Let's take a look at our Last Name input. Notice there are a few extra attributes:
 ```html
 <label for="LastName">Last Name: </label>
 <input name="LastName" type="text" placeholder="Last Name" maxlength="15">
 ```
-<label for="LastName">Last Name: </label>
-<input name="LastName" type="text" placeholder="Last Name" maxlength="15">
 We now have a `placeholder` attribute what functions as a greyed out hint or example input for the user. `maxlength` limits the users entry to 15 characters.
 
 We also have 2 other input types in our form. Notice how the `password` input type hides the users entry like any common password entry form field. The `submit` type will submit the form, and renders as a button. The `value` attribute is the text for our submit button.
