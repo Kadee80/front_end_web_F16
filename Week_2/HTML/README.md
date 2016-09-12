@@ -195,6 +195,8 @@ Unordered list:
 ```
 You will notice the the `<ol></ol>` and the `<ul></ul>` tags just wrap the `<li></li>`list items within them. They help separate this list item content from surrounding paragraphs and heading tags and will be very useful when we start styling these elements with CSS.
 
+## Live Code: Our first HTML page!
+
 ## In Class Exercise
 
 * In your hw repo, you should have uploaded a plain text file with a favorite recipe. 
