@@ -81,7 +81,7 @@ Semantic HTML Elements:
 <time>
 ```
 
-[wireframe with semantic markup](img/ux.002.png "Wireframe with Semantic Markup")
+![wireframe with semantic markup](img/ux.002.png "Wireframe with Semantic Markup")
 
 Whoa that was easy right? Between a clear wireframe of how the page is laid out from our UX designer and some semantic HTML we have a pretty clear grasp on what we need to build. We also have some information about spacing and layout we can use next when we apply CSS Styles next class.
 
