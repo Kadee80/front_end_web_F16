@@ -76,3 +76,5 @@ What if our container div is 1000px wide and we want to fit 4 images per row wit
 Wait! What is inline-block? It is kind of the best of both worlds. We still need to define dimensions of our element in the CSS but we can stack elements without that pesky clearing nonsense!
 
 [W3 inline block explained](http://www.w3schools.com/css/css_inline-block.asp)
+
+### Live Code: NYC Gallery, Positioning, and Inline-Block
