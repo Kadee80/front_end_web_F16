@@ -54,21 +54,27 @@ Also, it is worth noting that these diagrams can be made with any software you a
 * Beef
 * Pork
 * Eggs
+
 ---
+
 ####Lunch
 * Vegetarian
 * Poultry
 * Fish
 * Beef
 * Pork
+
 ---
+
 ####Dinner
 * Vegetarian
 * Poultry
 * Fish
 * Beef
 * Pork
+
 ----
+
 ####Dessert
 * Dairy
 * Baked Goods
