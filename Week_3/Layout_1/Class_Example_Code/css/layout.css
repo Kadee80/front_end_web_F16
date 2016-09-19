@@ -1,0 +1,26 @@
+/* this is where we define our styles */
+div, header, footer, article, section, aside{
+	min-height: 200px;
+	background-color: rgba(0,100,255,0.2);
+}
+
+div.wrapper{
+	width: 900px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+article{
+	width: 600px;
+	float: left;
+}
+
+aside{
+	width: 300px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
