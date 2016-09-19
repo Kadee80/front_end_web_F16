@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model</title>
+    <style type="text/css">
+    /* tag or element selector applies to all div elements on our page by default */
+    div{
+		float: left;
+    }
+
+    /* id selector should only be applied to 1 element per page and carries the most specificity weight */    
+    #special {
+        background-color: rgb(255, 0, 0);
+        border: 0px;
+        padding: 0px;
+        /* margin defines space between an elements edge and its neighbors */
+        margin: 20px;
+    }
+    
+    /* class selector thumbnail */
+    .thumbnail {
+        /* hex color RRGGBB */
+        background-color: #006FFF;
+        width: 200px;
+        height: 200px;
+    }
+    /* a second class that explores border */
+    
+    .outline-red {
+        border-width: 2px;
+        border-style: solid;
+        border-color: red;
+        /* shorthand border: width | style | color*/
+        border: 2px solid red;
+        /* overriding the left border properties in shorthand */
+        border-left: 10px dashed yellow;
+    }
+    /* padding applies spacing within the element between its edge and the content within */
+    
+    .padded {
+        padding: 50px;
+        padding-top: 10px;
+        /* padding:  top/bottom | left/right; */
+        padding: 20px 2px;
+        /* padding:  top | right | bottom |left ; */
+        padding: 10px 20px 30px 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="thumbnail">This is going to be a 200px X 200px div</div>
+    <!-- We can apply a class to multiple divs on our page -->
+    <div class="thumbnail">Another div!</div>
+    <div class="thumbnail outline-red">Third Div is 204px by 204px becuase of our 2px border around</div>
+    <!-- Lets apply some padding to our thumbnail divs with a new class -->
+    <div class="thumbnail padded">
+        Take a look at the placement of the content in this div. Padding like border adds to the dimensions of our element
+    </div>
+    <!-- lets overide all of our defaults with an ID -->
+    <div class="thumbnail padded outline-red" id="special"></div>
+</body>
+
+</html>
