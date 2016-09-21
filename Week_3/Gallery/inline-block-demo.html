@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inline Block vs Block Float Demo/Issues</title>
+    <style type="text/css">
+    /* universal selector for all tags on page */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    main,
+    article {
+        background-color: rgba(0, 0, 255, 0.2);
+    }
+    
+    main {
+        width: 900px;
+        margin: 0 auto;
+    }
+    
+    article {
+        width: 300px;
+        height: 300px;
+        /* float: left; */
+        /* add a border */
+        border: 2px solid blue;
+        /* modify our width and height */
+        /* 300-4 = 296px */
+        width: 296px;
+        height: 296px;
+        /* add a margin*/
+        margin: 10px;
+        /* 296 - 10- 10 */
+        width: 276px;
+        height: 276px;
+        display: inline-block;
+        /* 
+        	we can fix this extra space with
+			a negative margin of -4px
+			OR
+			adjust knowing we need to account for this subtract 4px
+			from our horizontal margins
+         */
+         /* margin: 10px 8px; */
+         width: 274px;
+         height: 274px;
+    }
+    /* add a block empty content element with zero height that clears both sides to avoid our wrapping/float issues */
+    
+    .clear-fix:after {
+        display: block;
+        clear: both;
+        /* ensure some older compatability */
+        height: 0;
+        font-size: 0;
+        content: " ";
+        /* extra backup */
+        visibility: hidden;
+
+    }
+    /* .clear{
+    	clear: both;
+    } */
+    </style>
+</head>
+
+<body>
+    <main class="clear-fix">
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <!-- 		<br class="clear"> -->
+    </main>
+</body>
+
+</html>
