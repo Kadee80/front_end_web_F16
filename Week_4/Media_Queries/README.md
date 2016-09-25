@@ -1,3 +1,19 @@
+# Media Queries: an Introduction 
+
+We use media queries to define different styles for different types of media and different screen sizes and layouts. When the conditions defined in the media query evaluate to TRUE, the corresponding styles are applied.
+
+```css
+body{
+ 	background-color:red;
+}
+@media (max-width:960px){
+	body{
+		background-color: black;
+	}
+}
+```
+In this example, the default browser window background color will be red. However as we resize the screen, and our browser is now less then 960px wide, the `(max-width:960px)` condition is now true. The browser background will now have the new style definitions applies and the window will turn black.
+
 ## Common Media Query Templates 
 
 #### **Mobile First** using only min-width. 
