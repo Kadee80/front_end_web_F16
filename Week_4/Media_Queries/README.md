@@ -99,17 +99,45 @@ You will see these breakpoints already provided in the style.css file in today's
 /* Write your default styles first. Then as the media queries return TRUE, styles will be updated/overidden. */
 
 /* Any screen over 1024px wide will have the defaults applied */
+    
+    body{
+        background-color: red;
+    }
 
+/* Our generic clear fix to avoid wrapping issues when we float. Notice we make sure this is applied in the default style section. */
+    
+    .clear-fix:after {
+        display: block;
+        clear: both;
+        /* ensure some older compatability */
+        height: 0;
+        font-size: 0;
+        content: " ";
+        /* extra backup */
+        visibility: hidden;
+    }
 
 /* Tablet */
 
-	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+            background-color: green;
+        }
+    }
+    
+    /* Take a look at this one! It queries the device height and width rather than the browser window. Notice how this only works when we use developer tools to fake a tablet's specs.*/
 
-	}
-
-/* Smaller Screens, Mobile  */
-
-	@media only screen and (max-width: 767px) {
-
-	}
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+        body {
+            background-color: yellow;
+        }
+    }  
+    
+    /* Smaller Screens, Mobile  */
+    
+    @media only screen and (max-width: 767px) {
+        body {
+            background-color: blue;
+        }
+    }
 ```
