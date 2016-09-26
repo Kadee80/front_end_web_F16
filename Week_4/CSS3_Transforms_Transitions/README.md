@@ -15,7 +15,7 @@ We will go through this in the class demo, but they are pretty straight forward!
 ## Transform 3D:
 
 Let’s just take a moment, and look at a demo that shows the difference between rotating in 2D and rotating in 3D along either the X, Y, or Z axis.
-
+```html
 <!DOCTYPE html>
 <html>
 
@@ -55,6 +55,8 @@ Let’s just take a moment, and look at a demo that shows the difference between
 </body>
 
 </html>
+
+```
 
 ## CSS3 Transitions:
 
