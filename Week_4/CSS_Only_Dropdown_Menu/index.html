@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Only Dropdown Nav</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul{
+			list-style: none;
+			float: left;
+		}
+
+		nav ul li{
+			width: 100px;
+			float: left;
+		}
+
+		nav ul li:hover{
+			background-color: #AAA;
+		}
+
+		/* make the anchor tags in nav display block for clickability */
+		nav ul a{
+			display: block;
+			color: #222;
+			text-decoration: none;
+			line-height: 30px;
+			padding: 15px;
+			text-align: center;
+		}
+		/* hide sublists by default */
+		nav ul ul{
+			display: none;
+			background: #DDD;
+		}
+		
+		nav ul li:hover > ul{
+			display: block;
+		}
+
+		nav ul ul li{
+			width: 200px;
+		}
+
+		nav ul li:hover ul li:hover{
+			background-color: #999;
+		}
+
+	</style>
+</head>
+<body>
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Pets</a>
+			<ul>
+				<li><a href="#">Dogs</a></li>
+				<li><a href="#">Cats</a></li>
+				<li><a href="#">Chickens</a></li>
+				<li><a href="#">Squirrels</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Contacts</a></li>
+	</ul>
+</nav>
+
+</body>
+</html>
+
+
+
+
+
+
