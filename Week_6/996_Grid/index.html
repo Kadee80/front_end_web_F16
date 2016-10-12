@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Responsive 996 Grid System</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <h1>6 equal Columns using the class grid_2</h1>
+        <div class="grid_2">
+            <p>Grid 2</p>
+        </div>
+        <div class="grid_2">
+            <p>Grid 2</p>
+        </div>
+        <div class="grid_2">
+            <p>Grid 2</p>
+        </div>
+        <div class="grid_2">
+            <p>Grid 2</p>
+        </div>
+        <div class="grid_2">
+            <p>Grid 2</p>
+        </div>
+        <div class="grid_2">
+            <p>Grid 2</p>
+        </div>
+        <!-- END ROW 1 -->
+        <h2>2 unequal divs with grid_8 and a grid_4</h2>
+        <div class="grid_8">
+            <p>grid 8</p>
+        </div>
+        <div class="grid_4">
+            <p>grid 4</p>
+        </div>
+        <!-- END ROW 2 -->
+        <h2>Grid inside another grid using alpha and omega classes</h2>
+        <div class="grid_8">
+            <p>We are going to put some "thumbnail" divs inside this 8 column wide div</p>
+            <div class="grid_2 alpha">
+                <p>ALPHA</p>
+            </div>
+            <div class="grid_2">
+                <p>thumbnail</p>
+            </div>
+            <div class="grid_2">
+                <p>thumbnail</p>
+            </div>
+            <div class="grid_2 omega">
+                <p>OMEGA</p>
+            </div>
+        </div>
+        <!-- end grid 8 -->
+        <div class="grid_4">
+            <p>Grid 4 with thumnnails</p>
+            <div class="grid_2 alpha">
+                <p>grid 2</p>
+            </div>
+            <div class="grid_1">
+                <p>grid 1</p>
+            </div>
+            <div class="grid_1 omega">
+                <p>grid 1</p>
+            </div>
+        </div>
+        <!-- END ROW 3 -->
+        <h1>Add some offset to our columns using prefix and suffix classes</h1>
+        <div class="grid_6 prefix_3 suffix_3">
+            <p>Center a grid 6 prefix 3 suffix 3</p>
+            <div class="grid_3 alpha"><p>Grid 3</p></div>
+            <div class="grid_3 omega"><p>Grid 3</p></div>
+
+        </div>
+        <!-- END ROW 4 -->
+    </div>
+    <!-- end .container -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
