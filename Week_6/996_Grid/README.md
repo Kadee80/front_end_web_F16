@@ -118,7 +118,7 @@ These are pretty self explanatory:
 viewport – this gives us a little more control as developers over the initial display size on a device. We should really add a scale parameter in there too:
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-* The other <script> tags are just linking to external scripts and javascript libraries we will not be using just yet. 996.gs implements moderizr.js automatically for us.
+* The other `<script>`tags are just linking to external scripts and javascript libraries we will not be using just yet. 996.gs implements moderizr.js automatically for us.
 
 
 ## Media Queries
@@ -131,7 +131,7 @@ Lets also take a moment to review media queries. 996 implements a few standard s
  <p>This is a just some content to fill out our container div so we can watch media queries in action. As we resize the window, we will see the background color change color based on our style.css file.</p>
 </div>
 ```
-Now let’s open up style.css and add some custom background colors to the container <div> so we can see how they are triggered:
+Now let’s open up style.css and add some custom background colors to the container `<div>` so we can see how they are triggered:
 
 
 ```css
