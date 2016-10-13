@@ -7,6 +7,67 @@ Copyright 2013, Josh Cope
    Site Styles
    ========================================================================== */
 
+.view{
+	cursor: default;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px;
+	box-shadow: 0 0 5px #ddd;
+}
+
+.view .mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.view img{
+	display: block;
+	position: relative;
+}
+.view h2{
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+	position: relative;
+	font-size: 22px;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+	margin: 20px 0 0 0;
+	text-shadow: none;
+}
+
+.view p{
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 10px;
+	position: relative;
+	color: #FFF;
+	padding: 10px 20px 5px 20px;
+	text-align: center;
+}
+
+.view a.info{
+	color: #FFF;
+	background: #000;
+	padding: 5px 12px;
+	text-decoration: none;
+	margin-top: 10px;
+	display: inline-block;
+	overflow: hidden;
+	text-transform: uppercase;
+
+}
+
+.view a.info:hover{
+	background: #72C02C;
+}
+
+
 /* =============================================================================
    Page Styles
    ========================================================================== */
@@ -16,16 +77,35 @@ Copyright 2013, Josh Cope
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body{
+		background-color: red;
+	}
+}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	body{
+		background-color: green;
+	}
+
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body{
+		background-color: yellow;
+	}
+
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	body{
+		background-color: purple;
+	}
+
+}
 
 
 /* =============================================================================
