@@ -115,11 +115,12 @@ We are going to change the color class of our H1 based on user input between 0 a
 </style>
 ```
 
-Now place the <H1> in a variable so we can change its color with a switch statement:
-
-var myH1 = document.getElementById("changeMe");
-Let’s write our first switch statement. You can read up more on switch statements here.
+Now place the `<H1>` in a variable so we can change its color with a switch statement:
 ```
+var myH1 = document.getElementById("changeMe");
+```
+Let’s write our first switch statement. You can read up more on switch statements here.
+```javascript
 //our first switch statement using the value of a user input,
 //rather than having a laundry list of else ifs we can just check cases.
  switch(n) {
