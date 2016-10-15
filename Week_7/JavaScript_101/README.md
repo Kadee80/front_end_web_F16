@@ -309,17 +309,17 @@ Here we are passing in the number 25 to our for loop with the parameter n. The c
 <head>
  <title></title>
  <script type="text/javascript">
- function countToN(n){
- for (var i = 0; i < n; i++) {
- console.log(i);
- };
- }
+	function countToN(n){
+		for (var i = 0; i < n; i++) {
+			console.log(i);
+		};
+	}
 
  </script>
 </head>
 
 <body >
- <button onclick="countToN(25);">Click Me to Start the Loop</button>
+ 	<button onclick="countToN(25);">Click Me to Start the Loop</button>
 </body>
 
 </html>
