@@ -2,7 +2,7 @@
 
 Lets get the input from a user via the HTML dom. First lets make a simple form inside our `<body>` tag. Lets give a min and max number possible for user. Step= 1 will make sure the user can only input whole numbers, change the step value and see how the UI changes.
 
-```
+```html
 <h1> a simple user form </h1>
  <form>
  <fieldset>
@@ -14,7 +14,7 @@ Lets get the input from a user via the HTML dom. First lets make a simple form i
 
 Notice we are calling a function called userNumber(); on click. Let’s write a function that grabs the user input, passes it into a variable and alerts it to the user again.
 
-```
+```javascript
 function userNumber() {
    //get value of form input, first grab the input element by ID
    var userN = document.getElementById("num");
@@ -28,7 +28,7 @@ Okay, we now have a function that incorporates user input. But it’s kind of la
 Before we move on, lets clean up our HTML with an event listener. Rather that attaching a function with onclick=”function();” We need to back-track a bit to make this all work.
 
 First, clean up the HTML.
-```
+```html
 <h1 id="changeMe"> Change me based on the user input!</h1>
  <form>
    <fieldset>
@@ -41,11 +41,12 @@ First, clean up the HTML.
 ```
 
 First, grab the button by ID, we can also get the element by tag or class name but we will keep it simple for today’s DOM examples:
-```
+```javascript
 var myBtn = document.getElementById("changeBtn");
 ```
+
 console log out to see what is returned when we grab an element object from the DOM
-```
+```javascript
 console.log(myBtn);
 ```
 Why is it null? JavaScript is trying to grab an elementById before that element has finished rendering on the page. We need wrap the above code in an event listener to make sure the DOM is loaded before trying to select  an element from it.
@@ -56,7 +57,7 @@ Why is it null? JavaScript is trying to grab an elementById before that element 
 
 * The second parameter is the function to call when the event it detected (Callback Function). Here we are using an anonymous function (these usually show up as callbacks inside other functions). Use anonymous functions when you never need to call a function again.
 
-```
+```javascript
 document.addEventListener("DOMContentLoaded", function(){
  var myBtn = document.getElementById("changeBtn");
  //now that we waited for the DOM to finish loading it works! lets log out some individual properties
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 Now inside our DOMContentLoaded function, lets add an event listener for our button:
 
-```
+```javascript
 myBtn.addEventListener("click", function(){
  //grab our input again
  var userN = document.getElementById("num").value;
@@ -76,12 +77,12 @@ myBtn.addEventListener("click", function(){
 ```
 
 Our input type in our HTML says number. So we think the value returned to JavaScript above should be a number. Let’s double check using typeof:
-```
+```javascript
 console.log(typeof userN);
 ```
 
 Well, it’s a String! Let’s convert it to an int so our incoming switch statement will work with just numbers, and we can ditch the quotes. parseInt() will return an Integer from s String. There is also a parseFloat() that returns Floats.
-```
+```javascript
 var n = parseInt(userN);
 console.log(typeof n);
 ```
@@ -116,7 +117,7 @@ We are going to change the color class of our H1 based on user input between 0 a
 ```
 
 Now place the `<H1>` in a variable so we can change its color with a switch statement:
-```
+```javascript
 var myH1 = document.getElementById("changeMe");
 ```
 Let’s write our first switch statement. You can read up more on switch statements here.
