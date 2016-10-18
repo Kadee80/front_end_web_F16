@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM 101</title>
+
+</head>
+<body>
+	<p id="time"></p>
+	<button onclick="addSingleP()">BAAAAAAD</button>
+	<button onclick="addMultiP(10)">GOOOOOOOOD</button>
+	<div id="content"></div>
+
+
+
+	<script type="text/javascript">
+	var content;
+
+	content = document.getElementById("content");
+
+	//this is the lazy BAD way to add to the DOM
+	function addSingleP(){
+		//add a p tag via a string and inner html
+		// DONT DO THIS EVER! (unless you just need a quick test)
+		content.innerHTML += "<p>This is a single paragraph added the bad way!</p>";
+
+	}
+
+	//proper dom creation! GOOOOOOOOOD
+	function addMultiP(num){
+		for(var i = 0; i < num; i++){
+			console.log(i);
+			// creat a paragraph NODE
+			var p = document.createElement("P");
+			// create a text node to put in our new paragraph node
+			var text = document.createTextNode("this is paragraph number: " + i);
+			// attach the text node to the paragraph node
+			p.appendChild(text);
+			// append the paragraph element to our content div
+			content.appendChild(p);
+		}
+	}
+
+	var counter = 0;
+
+	//call a function directly on the browser window every 1/3 of a second
+
+	window.setInterval(intervalTest, 1000);
+
+	function intervalTest(){
+		console.log(counter);
+
+		var p = document.getElementById("time");
+		//change the innerHTML of the paragraph
+		p.innerHTML = counter;
+		//increment counter by 5 each time the function is called
+		counter +=5;
+
+	}
+
+
+
+	</script> 
+</body>
+</html>

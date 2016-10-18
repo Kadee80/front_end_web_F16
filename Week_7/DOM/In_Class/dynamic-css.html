@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    .active {
+        background-color: pink;
+        color: white;
+        font-size: 60px;
+    }
+    </style>
+    <script type="text/javascript">
+    function changeCSS() {
+        //grab our h1 element
+        var element = document.getElementById("changeMe");
+
+        //if the element already has the class active applied remove it
+        if (element.classList.contains("active")) {
+            console.log(element.classList);
+            element.classList.remove("active");
+            element.innerHTML = "im not active anymore";
+        } else {
+            // if the element does not have the class active applied, ad it
+            console.log(element.classList);
+            element.classList.add("active");
+            element.innerHTML = "i am now active";
+        }
+
+
+    }
+    </script>
+</head>
+
+<body>
+    <h1 id="changeMe" onclick="changeCSS()">This is a header click me to change my content and my css!</h1>
+</body>
+
+</html>

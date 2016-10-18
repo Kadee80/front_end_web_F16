@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sums and Parameters</title>
+	<script type="text/javascript">
+		function startMe(){
+			// call other functions here on load
+			sumValues(18,20);
+		}
+
+		function sumValues(a,b){
+			var sum = a+b;
+			console.log("Your total charges are: " + sum);
+			return sum;
+		}
+
+		var returnedSum = sumValues(46,89);
+
+	</script>
+</head>
+<body onload="startMe()">
+
+	<button onclick="sumValues(45.6,89.4)">Sum Values on Click!</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOLEANS and Conditionals</title>
+	<script type="text/javascript">
+		//declare a global variable
+		var isOn = true;
+
+		console.log(isOn);
+
+		function switchOnOff(){
+			if (isOn == true){
+				alert("boolean isON is set to true. switching to false now...");
+				isOn = false;
+			}else{
+				alert("boolean isON is set to false. switching to true now...");
+				isOn = !isOn;
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<button onclick="switchOnOff()">Switch On Off</button>
+</body>
+</html>
