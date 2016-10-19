@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Delegation 101</title>
+    <style type="text/css">
+    .active {
+        color: red;
+        font-size: 20px;
+    }
+    </style>
+    <script type="text/javascript">
+    function alertMe() {
+        alert("Some dummy function for demo purposes!");
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        console.log("dom content loaded");
+
+        alertMe();
+        var element = document.getElementById("alertBtn");
+        
+        element.addEventListener("click", alertMe);
+
+        //toggle class on click with another anonymous function
+        document.getElementById("changeMe").addEventListener("click", function(event) {
+        	// event object is returned in our anonymous function, we can access the target element of the event with dot notation.
+        	console.log(event.target);
+        	var element = event.target;
+
+        	//toggle on and off the class active with classList.toggle();
+        	element.classList.toggle("active");
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <p id="changeMe">
+        Just a simple p tag to apply classes to!
+    </p>
+    <button id="alertBtn">Click Me to Fire an Event</button>
+</body>
+
+</html>
