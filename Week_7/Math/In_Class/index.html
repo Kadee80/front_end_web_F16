@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math 101</title>
+	<script type="text/javascript">
+		
+	// integer data types
+
+	//declaring variables and assigning values to those variables in one line
+	var x = 15;
+	var y = 35;
+
+	// simple math functions
+	// addition +
+	console.log(x+y);
+	// subtraction +
+	console.log(x-y);
+	// multiplication +
+	console.log(x*y);	
+	// division +
+	console.log(x/y);	
+
+	//modular operator % it returns the division remainder 
+	console.log(y%x);
+
+	//increment by 1 shorthand
+	x++;
+	// x+=1;
+	// x= x+1;
+	console.log(x);
+
+	y--;
+	console.log(y);
+
+	x+=5;
+	console.log(x);
+
+	// Floating Point Number Data Types
+
+	var num1 = 2.2;
+	var num2 = 3.6;
+
+	console.log("********************")
+	// access JS math object for some built in math methods
+	console.log(Math.round(num2));
+
+	console.log(Math.floor(num2));
+
+	console.log(Math.ceil(num2));
+
+	console.log("********************")
+	//random
+	var rn = Math.random();
+	console.log("Davids super stoked on this random number: " + rn + "!!!");
+	
+	var something = Math.round(rn);
+	if (something === 0){
+		//alert("heads");
+	}else{
+		//alert("tails");
+	}
+	console.log("********************")
+
+	//what if we want a number between 0 and 10?
+	function randomNumber(n){
+		var rn = Math.round(n*Math.random(n));
+		return rn;
+	}
+
+	var myRandomInt = randomNumber(1000);
+	//alert(myRandomInt);
+
+	function randomNumberRange(min,max){
+		var rn = Math.round(Math.random()*(max-min)+min);
+		return rn;
+	}
+
+	var rr= randomNumberRange(50,100);
+	alert(rr);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
