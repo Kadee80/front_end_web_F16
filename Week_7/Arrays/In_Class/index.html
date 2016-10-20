@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arrays 101</title>
+    <script type="text/javascript">
+    var el;
+    var months;
+
+    months = ["January", "February", "March", "April", "May",
+        "June", "July", "August", "September", "October", "November", "December"
+    ];
+    //months = [1,2,"three",4,5];
+    document.addEventListener("DOMContentLoaded", function(event) {
+        el = document.getElementById("arrayStuff");
+        //echo out the length of the month array:
+        el.innerHTML = months.length;
+    });
+
+    //pull out the last month in our months array and store in var
+    var lastMonth = months.pop();
+    console.log("The month removed was " + lastMonth);
+    console.log(months.length);
+
+    //put december back in our year!
+    months.push(lastMonth);
+    console.log(months.length);
+
+    //grab the 6th month in our array
+    //arrays
+    console.log(months[5]);
+
+    //loop and log all the months!
+    for (var i = 0; i < months.length; i++) {
+        console.log(months[i]);
+    }
+
+    //loop through the months backwards!
+    // for (var i = months.length - 1; i >= 0; i--) {
+    //     //console.log(months[i]);
+    //     var dm = months.pop();
+    //     var message = "We just removed: " + dm + " from our year. New array length is: " + months.length;
+    //     console.log(message);
+    // }
+
+    function randomNumber(n){
+		var rn = Math.round(n*Math.random(n));
+		return rn;
+	}
+
+	//alert(months[randomNumber(months.length-1)]);
+
+	//pick 3 months
+	for(var i =0; i <6; i++){
+		var m = months[randomNumber(months.length-1)];
+		alert(m);
+	}
+
+    </script>
+</head>
+
+<body>
+    <h3 id="arrayStuff">Nothing Yet...</h3>
+</body>
+
+</html>
