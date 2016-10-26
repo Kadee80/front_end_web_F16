@@ -4,11 +4,80 @@
 <head>
     <title>Tip Calculator</title>
     <!-- Latest compiled and minified CSS for bootstrap, forms are ugly by default, this will help style them a bit better, more to come on boostrap after midterms!-->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
     <script type="text/javascript">
+    
     document.addEventListener("DOMContentLoaded", function() {
     //our code will go here for the form data
+        var btn = document.getElementById("tipBtn");
+        btn.addEventListener("click", calcTip);
+    });
+
+    function calcTip(){
+        //grab our output div
+        var result = document.getElementById("tipOutput");
+        //result.innerHTML = "OK IM A DIV";
+        //get the value from our bill input
+        var b = document.getElementById("bill").value;
+        console.log(typeof(b));
+        //convert our value which is coming from the form as a string to a number
+        b = parseFloat(b); 
+        console.log(typeof(b));
+
+        //grab all possible radio buttons for tip amount, this will return an array of elements
+        var arrTip = document.getElementsByName("tip");
+        //console.log(arrTip);
+
+        //this is a local variable to be used as percentage in our calcs
+        var p;
+
+        //for loop to check which of the tip radio buttons in out array are checked off
+
+        for(var i = 0; i < arrTip.length; i++){
+            //check to see if a radio button is checked 
+            if(arrTip[i].checked){
+                //alert("found one!");
+                p = arrTip[i].value;
+                
+                break;
+            }
+        }
+
+        var tip = b*p;
+        //console.log(tip);
+
+        tip = moneyRound(tip);
+        //console.log(tip);
+
+        var total = b+tip;
+        //console.log(total);
+
+        //create 3 p tags for our output div
+        var p1 = document.createElement('P');
+        var p2 = document.createElement('P');
+        var p3 = document.createElement('P');
+
+        //create text nodes to append to the paragraphs
+        var t1 = document.createTextNode("Bill: " + b);
+        var t2 = document.createTextNode("Tip: " + tip);
+        var t3 = document.createTextNode("Total: " + total);
+
+        //append the text nodes to thier paragraph parent elements
+        p1.appendChild(t1);
+        p2.appendChild(t2);
+        p3.appendChild(t3);
+
+        result.appendChild(p1);
+        result.appendChild(p2);
+        result.appendChild(p3);
+
+
+
+
     }
+
     //helper function to round to the nearest 100th rather than whole number
     function moneyRound(num) {
         var roundNum = Math.ceil(num * 100) / 100;
