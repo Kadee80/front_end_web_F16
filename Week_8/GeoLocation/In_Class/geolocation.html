@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML5 Geolocation</title>
+
+	<script type="text/javascript">
+
+		function getLocation(){
+			//check to see if the device/browser supports/allows geolocation
+			if(navigator.geolocation){
+				//do creepy stuff
+				navigator.geolocation.getCurrentPosition(setPosition);
+			}else{
+				alert("Geolocation is not supported by your browser");
+			}
+		}
+
+		function setPosition(position){
+			var lat = position.coords.latitude;
+			var lon = position.coords.longitude;
+
+			//grab out location div as a variable
+			var loc = document.getElementById("location");
+			loc.innerHTML = "Latitude: " + lat + "<br> Longitude" + lon;
+		}
+
+		document.addEventListener("DOMContentLoaded", function(event){
+			getLocation();
+		});
+		
+	</script>
+</head>
+<body>
+	<div id="location"></div>
+</body>
+</html>
