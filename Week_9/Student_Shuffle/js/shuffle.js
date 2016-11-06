@@ -69,9 +69,9 @@ function sortStudents() {
 
 function shuffleStudents() {
     for (var i = students.length - 1; i >= 0; i--) {
+        
         //get a random number between 0 and the array length
         var randomIndex = Math.floor(Math.random() * (i + 1));
-
 
         //place the item at the random index location store as a var
         var itemAtIndex = students[randomIndex];
