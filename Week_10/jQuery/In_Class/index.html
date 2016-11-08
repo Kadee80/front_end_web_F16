@@ -32,8 +32,8 @@
 	</div>
 
 	<!-- Slide Up and Down  -->
-	<button class="btn btn-danger" id="slideOut">Slide Out</button>
-	<button class="btn btn-success" id="slideIn">Slide Out</button>
+	<button class="btn btn-danger" id="slideUp">Slide Up</button>
+	<button class="btn btn-success" id="slideDown">Slide Down</button>
 	<button class="btn btn-warning" id="toggleSlide">Toggle</button>
 
 	<div class="well" id="slideMe">
@@ -85,6 +85,26 @@
     	$("#fadeMe").fadeOut(5000);
     });
 
+    $("#fadeIn").click(function(){
+    	$("#fadeMe").fadeIn('fast');
+    });
+
+    $("#toggleFade").click(function(){
+    	$("#fadeMe").fadeToggle(1000);
+    });
+
+    //Slide in and Out
+    $("#slideUp").click(function(){
+    	$("#slideMe").slideUp(1000);
+    });
+
+    $("#slideDown").click(function(){
+    	$("#slideMe").slideDown(1000);
+    });
+
+    $("#toggleSlide").click(function(){
+    	$("#slideMe").slideToggle('slow');
+    });
 
 
 
