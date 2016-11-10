@@ -69,7 +69,8 @@
     <!-- Begin Container -->
     <div class="container" style="padding-top:70px;">
         <!-- Modal Opening Button Here -->
-        <button type="button" class="btn btn-primary btn-lg">Open Modal!</button>
+        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#basicModal" >Open Modal!</button>
+
         <!-- Preformatted text for popup modal definition -->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3" style="padding-top:70px;">
@@ -84,12 +85,55 @@ Heaven stops the nose at it and the moon winks,
 The bawdy wind that kisses all it meets
 Is hush'd within the hollow mine of earth,
 And will not hear it. What committed!
-Impudent <a href="#">strumpet</a>!
+Impudent <a href="#" data-toggle="modal" data-target="#define">strumpet</a>!
                 </pre>
             </div>
         </div>
         <!-- Large Modal Here-->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labeledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true"> &times; </span>
+                    </button>
+                    <h1 class="modal-title" id="myModalLabel">Modals</h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is the main content area for the user!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Cancel
+                        </button>
+                        <button type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
         <!-- Definition Here -->
+
+        <div class="modal fade" id="define" tabindex="-1" role="dialog" aria-labeledby="def">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true"> &times; </span>
+                        </button>
+                        <h4 class="modal-title" id="def">Strumpet</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>nound</strong> <em>dated</em></p>
+                        <p>
+                            - a female prostitute or promiscuous woman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
