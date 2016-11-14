@@ -1,6 +1,6 @@
 # Customizing Bootstrap:
 
-Today’s class is going to be a doosey! We are going to start with our jQuery based carousel from a few weeks ago, and modify Bootstrap’s base CSS to create something more custom and unique.
+Today’s class is going to be a doosey! We are going to start with our jQuery based carousel, and modify Bootstrap’s base CSS to create something more custom and unique.
 
 Before we begin, do a git pull so you have the starter folder.
 
