@@ -64,4 +64,82 @@ First, let’s do a git pull and make sure you have some images to animate.
 
 In class today we will animate more CSS properties. Code will be posted here at the end of class. We will be using different eases in our animations. Check out this helpful [ease visualization tool here](https://greensock.com/get-started-js#easing).
 
-Watch this video!
+[Watch this video!]()
+
+Today we are going to continue with a simple timeline example. We got our HTML set up at the end of last class. Here is where we left off:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>TimeLine Lite</title>
+ <style type="text/css">
+ body {
+ text-align: center;
+ }
+ 
+ .progress {
+ position: relative;
+ z-index: 3;
+ width: 100%;
+ height: 10px;
+ background-color: #000;
+ }
+ </style>
+</head>
+
+<body>
+ <div class="progress"></div>
+ <h1>Hello GreenSock!</h1>
+ <h1>You're Awesome</h1>
+ <p>This will be our first animation using the timeline tool!</p>
+ <!-- Load GSAP first -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+ <script type="text/javascript">
+ </script>
+</body>
+
+</html>
+We are going to be using jQuery to assign elements to variables and take a look at a few new jQuery methods while we are at it. So lets link to the jquery code:
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+We are going to use a new jQuery method today:
+
+.eq()
+
+In our HTML we have 2 <h1> tags, so if we use jQuery to select elements by tag name like so:
+
+var $h1s = $("h1");
+console.log($h1s);
+Whats with the $ before the variable name? We do this to keep track of our jQuery variables. Not necessary but useful. When we console log out out $h1s variable we see we have an array. If we want to pull out an element in a set/array we can do this using .eq(); for example:
+
+var $hello = $("h1").eq(0);
+console.log($hello.html());
+You’ll notice jQuery gives us another shortcut method. Rather than typing .innerHTML we can type .html() to get the contents of an element.
+
+Live Code:
+
+## Page intro sequence using Timeline Lite
+
+When we want a little more control over an animation sequence we can create a GSAP Timeline object. Rather than keeping track of how much we need to delay to start of each animation from the beginning of the first animation, we can add them one by one to a Timeline object.
+
+```javascript
+tl = new TimelineLite();
+```
+
+Now that we have a Timeline object we can use .add() and add each Tween one by one. Each animation will wait for the previous one to complete before executing. No more Delays!
+
+```javascript
+tl.add( TweenMax.to(element, 1, {opacity:1}) );
+tl.add( TweenMax.to(element, 1, {y:200}) );
+```
+OR we can skip a step and just concatenate each step in the order we want to add them.
+
+```javascript
+tl.to(element, 1, {opacity:1}).to(element, 1, {y:200});
+```
+What if we want a delay between animations, or what if we want an animation to execute before the previous one finishes? We can add a positive or negative delay as a 4th parameter.
+
+```javascript
+tl.to(element, 1, {opacity:1}).to(element, 1, {y:200},"+=1");
+```

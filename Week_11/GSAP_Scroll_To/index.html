@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elevator Scroller</title>
+    <style type="text/css">
+    body {
+        font-family: Arial, sans-serif;
+        margin-top: 40px;
+        /* visibility: hidden; */
+        background-color: #000;
+        color: #fff;
+    }
+    
+    #main {
+        margin: 0 auto;
+        width: 800px;
+    }
+    
+    .section {
+        padding: 20px 0 80px 0;
+        height: 100vh;
+    }
+    
+    .active {
+        color: #FFF;
+        border-left: 20px solid #FFF;
+        line-height: 30px;
+    }
+    
+    h2 {
+        font-size: 48px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 20px;
+    }
+    
+    ul {
+        position: fixed;
+        top: 40%;
+        right: 0px;
+        list-style: none;
+    }
+    
+    li {
+        width: 30px;
+        padding: 10px;
+        margin-bottom: 1px;
+        background-color: #111;
+        color: #ccc;
+        border-left: 10px solid #333;
+        cursor: pointer;
+    }
+    
+    p {
+        padding: 20px 0px;
+        font-size: 24px;
+        line-height: 30px;
+        color: #555;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li id="floor5Btn">5</li>
+            <li id="floor4Btn">4</li>
+            <li id="floor3Btn">3</li>
+            <li id="floor2Btn">2</li>
+            <li id="floor1Btn">1</li>
+        </ul>
+        <div id="main">
+            <div class="section" id="floor5Panel">
+                <h2>FLOOR 5</h2>
+            </div>
+            <div class="section" id="floor4Panel">
+                <h2>FLOOR 4</h2>
+            </div>
+            <div class="section" id="floor3Panel">
+                <h2>FLOOR 3</h2>
+            </div>
+            <div class="section" id="floor2Panel">
+                <h2>FLOOR 2</h2>
+            </div>
+            <div class="section" id="floor1Panel">
+                <h2>FLOOR 1</h2>
+            </div>
+        </div>
+    </div>
+    <!-- This example uses GreenSock.js and some of its plugins along with jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        /********************************************************************
+        Make the items fade in on load
+        ********************************************************************/
+
+
+        /********************************************************************
+        Grab Each Button by ID and assign them to variables
+        ********************************************************************/
+
+
+        /********************************************************************
+        Add and remove active classes on mouse enter mouse leave
+        ********************************************************************/
+
+
+        /********************************************************************
+        Set the scroll position to the top of each "floor's" divs
+        ********************************************************************/
+    });
+    </script>
+</body>
+
+</html>
