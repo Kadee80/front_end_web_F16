@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Timeline 101</title>
+    <style type="text/css">
+    	body{
+    		text-align: center;
+    	}
+
+    	.progress{
+    		position: relative;
+    		z-index: 3;
+    		width: 100%;
+    		height: 10px;
+    		background-color: black;
+    	}
+
+    	h2, p{
+    		position: relative;
+    		text-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
+    	}
+
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div id="page-wrap">
+        <h2>Hello Green Sock!</h2>
+        <h2>You're Awesome!</h2>
+        <p>I just made my first timeline and thats pretty cool!</p>
+    </div>
+    
+    <!-- Link to GSAP HERE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+	//wait for DOM to load
+	$(document).ready(function(){
+
+		var $hello = $("h2").eq(0);
+		var $awesome = $("h2").eq(1), 
+		$text = $("p"), 
+		$progress = $(".progress"),
+		$bg = $("#page-wrap");
+
+		//set an initial perspective
+		CSSPlugin.defaultTransformPerspective = 800;
+
+		var tl = new TimelineLite();
+		
+		tl.from($bg, 0.8, {opacity:0});
+		tl.from($hello, 0.5, {left:-500, opacity:0})
+		.from($awesome, 0.5, {left:-500, opacity:0})
+		.from($text, 0.8, {top:50, opacity:0}, '+=1.0')
+		.from($progress, tl.duration(), 
+			{
+				scaleX: 0, 
+				transformOrigin:"left", 
+				ease: Linear.easeNone
+			}, 0)
+		.to($progress, 0.2, {opacity:0, top:-8});
+
+
+
+
+
+
+
+
+
+
+
+	});   	
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
