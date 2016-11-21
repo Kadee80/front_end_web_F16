@@ -17,24 +17,42 @@ For your proposal to be counted as complete you must:
 ## Presentation Schedule
 
 1-Liam
+
 2- Tim
+
 3- Alexis
+
 4- Marilu
+
 5- Yihan
+
 6- Tiffany
+
 7- Katie
+
 8- Jack
+
 9- Julian
+
 10- Michelle
 
 *BREAK*
 
+
 1- Naz
+
 2- Mate
+
 3- Janina
+
 4- Teresa
+
 5- David
+
 6- Cindy
+
 7- Krishna
+
 8- Shelby
+
 9- Rob
