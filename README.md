@@ -196,12 +196,13 @@ Advanced JavaScript:
 #### Week 13
 
 * Advanced Greensock Animation
-* MixItUp.js
+* jQuery Mobile
 * Accessible Web with Claire Kearney-Volpe 
 
 #### Week 14
 * API Requests
-* jQuery Mobile
+* MixItUp.js
+
 * Option Early Final Presentations
 
 * Dec 19 Final Project Presentations
