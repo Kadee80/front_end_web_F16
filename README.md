@@ -187,18 +187,19 @@ Advanced JavaScript:
 
 * jQuery
 * Bootstrap JavaScript Components
+* Greensock Animation
 
 #### Week 12
-* Greensock Animation
-* Geolocation GeoJSON
-* Mapbox and API Requests
+* Final Project Proposals
 
 #### Week 13
-
+* Advanced Greensock Animation
 * jQuery Mobile
-* Option Early Final Presentations
 
 #### Week 14
+* API Requests
+* Option Early Final Presentations
+
 * Dec 19 Final Project Presentations
 
 
