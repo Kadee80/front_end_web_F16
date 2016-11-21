@@ -8,11 +8,13 @@ Today all 19 of you will be presenting your final project proposals.
 
 * Planning possible future class lessons based on the needs presented today.
 
-For your proposal to be counted as complete you must:
+### For your proposal to be counted as complete you must:
 
 1- Present in class, either your blog post or slide presentation.
 
 2- Submit a blog post and provide me with a link either via github or email.
+
+### REMINDER - We do not have class Wednesday due to Thanksgiving break. Rest up and enjoy!
 
 ## Presentation Schedule
 
