@@ -16,7 +16,7 @@ For your proposal to be counted as complete you must:
 
 ## Presentation Schedule
 
-1-Liam
+1- Liam
 
 2- Tim
 
@@ -34,7 +34,6 @@ For your proposal to be counted as complete you must:
 
 9- Julian
 
-10- Michelle
 
 *BREAK*
 
