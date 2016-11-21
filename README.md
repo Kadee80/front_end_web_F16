@@ -194,10 +194,11 @@ Advanced JavaScript:
 
 #### Week 13
 * Advanced Greensock Animation
-* jQuery Mobile
+* MixItUp.js
 
 #### Week 14
 * API Requests
+* jQuery Mobile
 * Option Early Final Presentations
 
 * Dec 19 Final Project Presentations
