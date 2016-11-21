@@ -190,11 +190,14 @@ Advanced JavaScript:
 * Greensock Animation
 
 #### Week 12
+
 * Final Project Proposals
 
 #### Week 13
+
 * Advanced Greensock Animation
 * MixItUp.js
+* Accessible Web with Claire Kearney-Volpe 
 
 #### Week 14
 * API Requests
