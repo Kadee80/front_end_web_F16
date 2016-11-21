@@ -13,3 +13,26 @@ For your proposal to be counted as complete you must:
 1- Present in class, either your blog post or slide presentation.
 
 2- Submit a blog post and provide me with a link either via github or email.
+
+Liam
+Tim
+Alexis
+Marilu
+Yihan
+Tiffany
+Katie
+Jack
+Julian
+Michelle
+
+*BREAK*
+
+Naz
+Mate
+Janina
+Teresa
+David
+Cindy
+Krishna
+Shelby
+Rob
