@@ -4,6 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Elevator Scroller</title>
+    <style type="text/css">
+        body{
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 300; 
+            margin-top: 40px;
+            color: #FFF;
+            background-color: black;
+        }
+
+        h2{
+           font-weight: 400; 
+           font-size: 48px;
+           border-bottom: 2px solid #CCC;
+        }
+
+        #main{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .section{
+            padding: 20px 0 80px 0;
+            height: 100vh;
+        }
+
+        /* navigation styles */
+        
+        ul{
+            position: fixed;
+            top: 40%;
+            right: 0px;
+            list-style-type: none;
+        }
+        
+        li{
+            width: 30px;
+            padding: 10px;
+            margin-bottom: 1px;
+            background-color: #111;
+            border-left: 10px solid #333;
+            cursor: pointer;
+        }
+
+        .active{
+            color: #FFF;
+            border-left: 20px solid #FFF;
+            line-height: 30px
+        }
+
+
+
+
+
+
+    </style>
 
 </head>
 
@@ -45,21 +100,70 @@
         /********************************************************************
         Make the items fade in on load
         ********************************************************************/
+        TweenLite.from($("body"), 0.5, {autoAlpha:0});
 
+        //animate our menu in from off the screen to the right
+        TweenLite.from($("ul"), 0.5, {right:-500,delay:0.5});
 
         /********************************************************************
         Grab Each Button by ID and assign them to variables
         ********************************************************************/
 
+        var $floor1Btn = $("#floor1Btn"),
+        $floor2Btn = $("#floor2Btn"),
+        $floor3Btn = $("#floor3Btn"),
+        $floor4Btn = $("#floor4Btn"),
+        $floor5Btn = $("#floor5Btn"),
+
+        $navButtons = $("li");
 
         /********************************************************************
         Add and remove active classes on mouse enter mouse leave
         ********************************************************************/
+        $navButtons.mouseenter(function(e){
+            //console.log(e.target);
+            TweenLite.to(this, 0.2, {className:"+=active"});
+        });
 
+        $navButtons.mouseleave(function(e){
+            //console.log(e.target);
+            TweenLite.to(this, 0.2, {className:"-=active"});
+        });
 
         /********************************************************************
         Set the scroll position to the top of each "floor's" divs
         ********************************************************************/
+
+        //using jQuery we can get the screen position in pixels of each of our floor divs
+
+        console.log($("#floor1Panel").offset().top);
+
+        //assign an HTML5 data attribute to each of our buttons with the top position of the correstponding floor section top positions
+
+        $floor5Btn.attr("data-scrollPos", $("#floor5Panel").offset().top);
+        $floor4Btn.attr("data-scrollPos", $("#floor4Panel").offset().top);
+        $floor3Btn.attr("data-scrollPos", $("#floor3Panel").offset().top);
+        $floor2Btn.attr("data-scrollPos", $("#floor2Panel").offset().top);
+        $floor1Btn.attr("data-scrollPos", $("#floor1Panel").offset().top);
+
+        //assign a function on click to each of our vertical navigation buttons
+
+        $navButtons.click(function(){
+            var myScrollPostion = $(this).attr("data-scrollPos");
+            console.log(myScrollPostion);
+            TweenLite.to(window, 2, {scrollTo: myScrollPostion, ease:Back.easeOut});
+        });
+
+        //scroll to a floor of our choosing on load
+        var initialFloor = $("#floor2Btn").attr("data-scrollPos");
+        TweenLite.to(window, 1, {scrollTo:initialFloor});
+
+
+
+
+
+
+
     });
     </script>
 </body>
