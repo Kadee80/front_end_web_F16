@@ -15,9 +15,23 @@
         $("#reset").click(function(event){
             $("#Container").mixItUp('filter', '');
         });
-        
+
         // Instantiate MixItUpHere
-        $("#Container").mixItUp();
+        $("#Container").mixItUp({
+            load:{
+                filter:'' //this is your default filter, try changing it to all
+            },
+            controls:{
+                toggleFilterButtons:true, //allows for more than 1 filter button to be selected at a time. try changing to false
+                toggleLogic:'and' // when more than 1 button is selected, show only the items that have BOTH filters, try changind this to OR
+            },
+            animation:{
+                enable:true,
+                effects:'fade scale stagger rotateX',
+                duration: 600,
+                easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+            }
+        });
     });
     </script>
     <style type="text/css">
@@ -72,6 +86,7 @@
         font-size: 0.1px;
         background: #DDD;
         min-height: 200px;
+        position: relative;
     }
     /* This needed for spacing between mix elements*/
     
@@ -115,6 +130,37 @@
         padding-top: 60%;
     }
 
+    /* Fail Message */
+
+    .container .fail-message{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2%;
+        text-align: center;
+    }
+    .container.fail .fail-message{
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    .container.fail .fail-message:before{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .container.fail .fail-message span{
+        display: inline-block;
+        font-weight: 500;
+        color: #333;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
     /* Larger Phones and Tablets (2 items per row) */
         @media all and (min-width:768px){
         .container .mix, .container .gap{
@@ -142,16 +188,23 @@
         <button class="filter" data-filter="all">All</button>
         <button id="reset">None</button>
         <!-- Sort -->
+        <label>Sort</label>
+        <button class="sort" data-sort="default">Default</button>
+        <button class="sort" data-sort="myorder:asc">Ascending</button>
+        <button class="sort" data-sort="myorder:desc">Descending</button>
+        <button class="sort" data-sort="random">Random</button>
     </div>
     <!-- This container holds all elements we wish to filter or sort -->
     <div id="Container" class="container">
+        <!-- Fail message for when your selected filters return nothing -->
+        <div class="fail-message"><span>No items were found matching the current filters.</span></div>
         <!-- content to filter and sort -->
-        <div class="mix dogs cats"></div>
-        <div class="mix cats"></div>
-        <div class="mix dogs goats"></div>
-        <div class="mix goats"></div>
-        <div class="mix cats goats"></div>
-        <div class="mix cats"></div>
+        <div class="mix dogs cats" data-myorder="1"></div>
+        <div class="mix cats" data-myorder="2"></div>
+        <div class="mix dogs goats" data-myorder="3"></div>
+        <div class="mix goats" data-myorder="4"></div>
+        <div class="mix cats goats" data-myorder="5"></div>
+        <div class="mix dogs" data-myorder="6"></div>
         <div class="gap"></div>
         <div class="gap"></div>
     </div>
