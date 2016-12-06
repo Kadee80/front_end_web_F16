@@ -1,0 +1,69 @@
+//Basic Global Styles
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DDD;
+    font-family: 'Helvetica Neue', Arial sans-serif;
+}
+
+// Nest Styles for Our Header.
+header {
+    background: #FFF;
+    padding: 10px 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 96%, rgba(230, 230, 230, 1) 100%);
+    //clearfix
+    &:after {
+        display: block;
+        clear: both;
+        /* ensure some older compatability */
+        height: 0;
+        font-size: 0;
+        content: " ";
+        /* extra backup */
+        visibility: hidden;
+    }
+    a.brand {
+        display: block;
+        height: 100%;
+        width: 200px;
+        margin: 0 20px;
+        float: left;
+        text-decoration: none;
+        transition: all 0.4s linear;
+        color: #006FFF;
+        line-height: 40px;
+        h1 {
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+    }
+}
+
+#test{
+    color:blue;
+}
+
+//Media Query For Responsive Nav We Will Build
+@media (max-width: 768px),
+screen and (max-device-width: 768px) {
+    header {
+        padding: 5px 0px 0px 0px;
+        background: none;
+        background-color: rgba(255, 255, 255, 1);
+        
+    }
+    main {
+            padding: 2.5vh;
+            padding-top: 50px;
+            height: 60vh;
+            background-color: black;
+            color: white;
+        }
+}

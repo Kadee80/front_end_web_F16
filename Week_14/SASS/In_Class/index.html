@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SASS Crash Course</title>
+    <link rel="stylesheet" type="text/css" href="css/main.scss">
+</head>
+
+<body>
+    <header>
+        <a href="https://opentrons.com" class="brand">
+            <h1 class="top-nav-logo">Goats R Us</h1>
+        </a>
+        <nav>
+            <ul id="main">
+                <li>
+                    <a href="" class="menu-toggle" >Products</a>
+                </li>
+                <li>
+                    <a href="" class="menu-toggle" >Company</a>
+                </li>
+                <li>
+                    <a href="" class="menu-toggle" >Resources</a>
+                </li>
+                <li>
+                    <a href="">Buy</a>
+                </li>
+            </ul>
+            <section id="dropdown">
+                <ul class="products">
+                    <li class="mobile">Products</li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li></li>
+                </ul>
+                <ul class="company">
+                    <li class="mobile">Company</li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#" target="_blank">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <ul class="resources">
+                    <li class="mobile">Resources</li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#" target="_blank">External Link</a></li>
+                </ul>
+            </section>
+        </nav>
+        <br style="clear:both">
+    </header>
+    <div id="nav-spacer">&nbsp;</div>
+
+	<main>
+		<p>Some content to push down with our nav</p>
+	</main>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+    </script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
