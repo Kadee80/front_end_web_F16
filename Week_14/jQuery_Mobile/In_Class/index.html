@@ -18,7 +18,64 @@
 </head>
 
 <body>
-	
+    <!-- Our Main Page -->
+    <div data-role="page">
+
+    <!-- Nav Panel -->
+    <div data-role="panel" id="navpanel" data-theme="b" data-display="reveal" data-position="right">
+        <ul data-role="listview" data-corners="false">
+            <li><a href="#" data-role="button" data-rel="close" data-icon="delete" data-iconpos="right"></a> </li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#" >Link 3</a></li>
+            <li data-icon="false"><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+
+    <!-- Star Popup -->
+    <div data-role="popup" id="star" data-overlay-theme="b" data-theme="a" data-dismissible="true">
+    <!-- Header -->
+        <div data-role="header" data-theme="b">
+            <a href="#" data-rel="back" class="ui-btn ui-corner ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h1>Goat Fact #2</h1>
+        </div>
+    <!-- Main Content -->
+        <div data-role="main">
+            <p>Goats were one of the first animals to be tamed by humans and were being herded 9,000 years ago.</p>
+        </div>
+        <div data-role="footer">
+            <div class="ui-grid-b center">
+                <div class="ui-block-a"><a data-role="button" data-icon="check" data-iconpos="left" data-theme="b" data-rel="back">YES</a></div>
+                <div class="ui-block-b"><a data-role="button" data-icon="delete" data-iconpos="left" data-theme="b" data-rel="back">NO</a></div>
+                <div class="ui-block-c"><a data-role="button" data-icon="info" data-iconpos="left" data-theme="b" data-rel="back">MAYBE</a></div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Main Page Content -->
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Awesome App</h1>
+            <a href="#navpanel" data-role="button" data-icon="bars" data-iconpos="notext" class="ui-btn-right">MENU</a>
+        </div>
+        <!-- Content -->
+        <div data-role="main" class="ui-content">
+            <p>Hello main content......................</p>
+        </div>
+        <!-- Footer -->
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#star" data-icon="star" data-rel="popup" data-position-to="window" data-transition="flow" >Star</a></li>
+                    <li><a href="#" data-icon="heart" data-rel="popup" data-position-to="window" data-transition="flip" >Heart</a></li>
+                    <li><a href="#" data-icon="home" data-rel="popup" data-position-to="window" data-transition="flip" >Home</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
