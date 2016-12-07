@@ -6,6 +6,14 @@ body {
     font-family: 'Helvetica Neue', Arial sans-serif;
 }
 
+main {
+    padding: 2.5vh;
+    padding-top: 50px;
+    height: 60vh;
+    background-color: black;
+    color: white;
+}
+
 // Nest Styles for Our Header.
 header {
     background: #FFF;
@@ -46,7 +54,6 @@ header {
     }
 }
 
-
 //Media Query For Responsive Nav We Will Build
 @media (max-width: 768px),
 screen and (max-device-width: 768px) {
@@ -54,13 +61,5 @@ screen and (max-device-width: 768px) {
         padding: 5px 0px 0px 0px;
         background: none;
         background-color: rgba(255, 255, 255, 1);
-        
     }
-    main {
-            padding: 2.5vh;
-            padding-top: 50px;
-            height: 60vh;
-            background-color: black;
-            color: white;
-        }
 }
