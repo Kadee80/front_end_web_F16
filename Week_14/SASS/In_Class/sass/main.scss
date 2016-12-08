@@ -1,9 +1,9 @@
-//Basic Global Styles
+    //Basic Global Styles
 body {
     margin: 0;
     padding: 0;
     background-color: #DDD;
-    font-family: 'Helvetica Neue', Arial sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 main {
@@ -21,7 +21,7 @@ header {
     position: fixed;
     width: 100vw;
     z-index: 100;
-    font-size: 12px;
+    font-size: 13px;
     background: rgba(255, 255, 255, 1);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 96%, rgba(230, 230, 230, 1) 100%);
     //clearfix
@@ -45,12 +45,85 @@ header {
         transition: all 0.4s linear;
         color: #006FFF;
         line-height: 40px;
+        &.open {
+            margin: 35px 20px;
+        }
         h1 {
             font-weight: 200;
             margin: 0;
             padding: 0;
             font-size: 30px;
         }
+    }
+    nav {
+        float: right;
+        width: 500px;
+        line-height: 40px;
+        padding-right: 20px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-transform: uppercase;
+            li {
+                display: inline-block;
+                width: 130px;
+                &:last-child {
+                    width: 50px;
+                }
+                a {
+                    color: rgba(0, 0, 0, 0.6);
+                    text-decoration: none;
+                    display: block;
+                    transition: color 1s;
+                    &:hover {
+                        color: rgba(0, 0, 0, 1);
+                    }
+                    &.active {
+                        color: rgba(0, 0, 0, 1);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        section#dropdown {
+            float: right;
+            width: 500px;
+            line-height: 20px;
+            ul {
+                display: inline-block;
+                width: 130px;
+                text-transform: none;
+                li {
+                    &.mobile {
+                        display: none;
+                    }
+                    a {
+                        transition: all 0.6s ease-out;
+                        white-space: nowrap;
+                        &:hover {
+                            padding-left: 7px;
+                        }
+                    }
+                }
+            }
+            ul.active li a {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+    // nav collapse goes here
+    div#nav-collapse {
+        display: none;
+    }
+}
+
+div#nav-spacer {
+    height: 0;
+    width: 100%;
+    transition: all 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    &.nav-open {
+        height: 90px;
     }
 }
 
@@ -61,5 +134,38 @@ screen and (max-device-width: 768px) {
         padding: 5px 0px 0px 0px;
         background: none;
         background-color: rgba(255, 255, 255, 1);
+        nav {
+            width: 100%;
+            float: none;
+            ul#main {
+                display: none;
+            }
+            section#dropdown {
+                width: 100%;
+                text-align: center;
+                ul {
+                    width: 98%;
+                    display: block;
+                    padding: 2% 1%;
+                }
+            }
+        }
+        div.nav-collapse {
+            float: right;
+            display: block;
+            width: 50px;
+            cursor: pointer;
+            padding-right: 20px;
+            .bar1,
+            .bar2,
+            .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #006FFF;
+                margin: 6px 0;
+                transition: 0.4s;
+                border-radius: 2px;
+            }
+        }
     }
 }
