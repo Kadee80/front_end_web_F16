@@ -1,0 +1,46 @@
+/**************
+	Gallery
+**************/
+
+section.goats{
+	padding:25px;
+	div.image-gallery{
+		width:175px;
+		overflow: hidden;
+		div.img-wrapper{
+			min-width:2000px;
+			position:relative;
+			left:0px;
+			transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+			img{
+				display:inline-block;
+				width:175px;
+				vertical-align: middle;
+			}
+		}
+		div.navigation{
+			position:absolute;
+			height:225px;
+			z-index: 0;
+			div#navigation-dots{
+				position:absolute;
+				bottom:15px;
+				text-align: center;
+				width:175px;
+				span{
+					width: 10px;
+					height: 10px;
+					padding: 0 8px;
+					margin:0 5px;
+					border-radius: 50%;
+					background-color: #AAAAAA;
+					cursor:pointer;
+
+				}
+				span:first-child{
+					background-color: $primary-brand;
+				}
+			}
+		}
+	}
+}

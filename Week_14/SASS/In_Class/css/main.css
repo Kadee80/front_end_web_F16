@@ -9,21 +9,6 @@ main {
   padding-top: 50px;
   height: 60vh;
   color: white; }
-  main div {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-   background-color: #006FFF;
-}
-
-    main div.darken {
-      background-color: #004399; }
-    main div.lighten {
-      background-color: #66a9ff; }
-    main div.complement {
-      background-color: #ff9000; }
-    main div.invert {
-      background-color: #4d79b3; }
 
 /************************************
  HEADER NAVIGATION DESKTOP AND MOBILE
@@ -163,5 +148,41 @@ div#nav-spacer {
       header div.nav-collapse.change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px); } }
+/**************
+	Gallery
+**************/
+section.goats {
+  padding: 25px; }
+  section.goats div.image-gallery {
+    width: 175px;
+    overflow: hidden; }
+    section.goats div.image-gallery div.img-wrapper {
+      min-width: 2000px;
+      position: relative;
+      left: 0px;
+      transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1); }
+      section.goats div.image-gallery div.img-wrapper img {
+        display: inline-block;
+        width: 175px;
+        vertical-align: middle; }
+    section.goats div.image-gallery div.navigation {
+      position: absolute;
+      height: 225px;
+      z-index: 0; }
+      section.goats div.image-gallery div.navigation div#navigation-dots {
+        position: absolute;
+        bottom: 15px;
+        text-align: center;
+        width: 175px; }
+        section.goats div.image-gallery div.navigation div#navigation-dots span {
+          width: 10px;
+          height: 10px;
+          padding: 0 8px;
+          margin: 0 5px;
+          border-radius: 50%;
+          background-color: #AAAAAA;
+          cursor: pointer; }
+        section.goats div.image-gallery div.navigation div#navigation-dots span:first-child {
+          background-color: #006FFF; }
 
 /*# sourceMappingURL=main.css.map */
