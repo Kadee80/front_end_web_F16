@@ -2,15 +2,32 @@ body {
   margin: 0;
   padding: 0;
   background-color: #DDD;
-  font-family: 'Helvetica Neue', Arial, sans-serif; }
+  font-family: "Helvetica Neue", Arial, sans-serif; }
 
 main {
   padding: 2.5vh;
   padding-top: 50px;
   height: 60vh;
-  background-color: black;
   color: white; }
+  main div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+   background-color: #006FFF;
+}
 
+    main div.darken {
+      background-color: #004399; }
+    main div.lighten {
+      background-color: #66a9ff; }
+    main div.complement {
+      background-color: #ff9000; }
+    main div.invert {
+      background-color: #4d79b3; }
+
+/************************************
+ HEADER NAVIGATION DESKTOP AND MOBILE
+*************************************/
 header {
   background: #FFF;
   padding: 10px 0;
@@ -115,6 +132,14 @@ div#nav-spacer {
           width: 98%;
           display: block;
           padding: 2% 1%; }
+          header nav section#dropdown ul li {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 2% 0%; }
+            header nav section#dropdown ul li.mobile {
+              display: block;
+              font-weight: 800; }
     header div.nav-collapse {
       float: right;
       display: block;
@@ -129,6 +154,14 @@ div#nav-spacer {
         background-color: #006FFF;
         margin: 6px 0;
         transition: 0.4s;
-        border-radius: 2px; } }
+        border-radius: 2px; }
+      header div.nav-collapse.change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px); }
+      header div.nav-collapse.change .bar2 {
+        opacity: 0; }
+      header div.nav-collapse.change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px); } }
 
 /*# sourceMappingURL=main.css.map */

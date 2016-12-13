@@ -2,6 +2,11 @@ $(function() {
     //close the dropdown nav on load
     $('#dropdown').slideUp(0);
 
+    // activate mobile navigation and change the button class
+    $(".nav-collapse").click(function(event){
+        $(this).toggleClass('change');
+        $('#dropdown').slideToggle(500);
+    });
 
     //on click open the subnav and apply .active to the proper ul
     $('.menu-toggle').click(function(event) {
