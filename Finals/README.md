@@ -18,23 +18,22 @@ For your final project to be considered complete. You must submit the following:
 
 ## Presentation Order:
 
-1. Katie
-2. Krishna
-3. Tim
-4. Cindy
-5. Teresa
-6. David
-7. Yihan
-8. Julian
+1. Naz
+2. Katie
+3. Krishna
+4. Tim
+5. Cindy
+6. Teresa
+7. David
+8. Yihan
+9. Julian
 
 BREAK
 
-9. Liam
 10. Alexis
 11. Shelby
 12. Jack
 13. Marilu
 14. Rob
-15. Naz
 16. Tiffany
 17. Michelle
